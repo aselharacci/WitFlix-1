@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background: black
 }
 
 #content {
@@ -25,7 +26,12 @@ body {
 
 #topic-container {
   display: flex;
-  gap: 10px;
+  gap: 20px;
+}
+
+#topic-container a {
+  text-decoration: none;
+  color: whitesmoke;
 }
 
 #right-container {
@@ -49,6 +55,14 @@ body {
   padding: 20px;
   flex-direction: column;
   line-height: 20px;
+  border: 1px solid whitesmoke;   
+  border-radius: 8px;  
+  background-image: url('https://www.arttablo.com/upload/U-batman-ve-joker-3-film-afisi-kanvas-tablo1504212553-800.jpg');
+  background-size: cover;       /* Görsel divi tamamen kaplasın */
+  background-position: center;  /* Görsel ortalansın */
+  background-repeat: no-repeat; /* Görsel tekrarlamasın */
+  color: white;                 /* Metin rengini açıkça gözüksün diye */
+  position: relative;    
 }
 
 #rating-container {
@@ -57,15 +71,20 @@ body {
   gap: 10px;
 }
 
-.movies {
-  height: 200px;
-  background-color: cornflowerblue;
+.header-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10;
+  margin: 20px 30px 0px 20px;
+  color: aliceblue;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.footer {
-  height: 100px;
-  background-color: cornflowerblue;
+.movies {
+  height: 250px;
 }
+
 
 .red-title {
   color: red;
@@ -88,4 +107,86 @@ body {
   border-width: 0;
   border-radius: 8px;
   color: white;
+}
+
+.bolum-movies {
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+}
+
+.box {
+  width: 370px;
+  height: 165px;
+  border: 3px solid gray;
+  background-color: white;
+  overflow: hidden;
+  margin: 8;
+  padding-left: 25;
+  padding-top: 20;
+  gap: 5px;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: gray;
+  padding: 20px;
+  height: 100px;
+}
+
+.left {
+  width: 700px;
+}
+
+.left-nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #333;
+  font-size: 10px;
+}
+
+.left p {
+  font-size: 10px;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  max-width: 400px;
+}
+
+.FollowUs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* sola yaslı olması için */
+  gap: 10px; /* yazı ve ikonlar arasında boşluk */
+  margin-left: 0;
+}
+
+
+.FollowUs a {
+  font-size: 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+.AppLinks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* sola yaslı olması için */
+  margin-left: 0;
+}
+
+
+.AppLinks a {
+  font-size: 10px;
+  text-decoration: none;
+  color: #333;
 }
